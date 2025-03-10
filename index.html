@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When is Your Free Time? 🐱</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📅 When is Your Free Time? 🐱</h2>
+        <span class="cat-emoji">🐱</span>
+        <div class="question">Select a date that works for you:</div>
+        <input type="date" id="free-time" min="2024-03-11" max="2024-04-30">
+        
+        <p id="selected-time">This is my free time: Next Week, First Week of Next Month, Third Week of Next Month, Fifth Week of Next Month</p>
+        <p>Your selected date: <span id="display-time"></span></p>
+
+        <div class="slide active" id="slide-1">
+            <button id="next-btn-1">Next ➡️</button>
+        </div>
+        
+        <div class="slide" id="slide-2" style="display: none;">
+            <h2>🍽️ What Do You Prefer? ☕🐾</h2>
+            <span class="cat-emoji">🐾</span>
+            <div class="question">Choose your favorite option:</div>
+            <div class="options">
+                <button class="coffee" id="coffee-btn">☕ Coffee</button>
+                <button class="meal" id="meal-btn">🍰 Meal</button>
+            </div>
+        </div>
+
+        <!-- Third Slide (Results + Thank You Message) -->
+        <div class="slide" id="slide-3" style="display: none;">
+            <h2>🎉 Thank You for Your Response, Miss/Mam! 🐱</h2>
+            <p>Your selected free time: <span id="final-time"></span></p>
+            <p>Your food preference: <span id="final-food"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
